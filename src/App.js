@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'
 import Modal from './Modal';
 import Home from './Home';
 import Sidebar from './Sidebar';
@@ -9,7 +9,6 @@ const App = () => {
       <Home />
       <Modal />
       <Sidebar />
-
     </>
 
   )
