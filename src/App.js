@@ -1,8 +1,18 @@
-
 import './App.css';
+import Modal from './Modal';
+import Home from './Home';
+import Sidebar from './Sidebar';
 
 const App = () => {
-  return <h1>Sidebar project</h1>
+  return (
+    <>
+      <Home />
+      <Modal />
+      <Sidebar />
+
+    </>
+
+  )
 }
 
 export default App;
