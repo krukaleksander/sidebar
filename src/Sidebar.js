@@ -5,10 +5,12 @@ import { social, links } from './data';
 import { useGlobalContext } from './context';
 
 const Sidebar = () => {
-    return <aside className={`sidebar`}>
+    const { isSidebarOpen, closeSidebar } = useGlobalContext();
+
+    return <aside className={`${isSidebarOpen && 'show-sidebar'} sidebar`}>
         <div className="sidebar-header">
             <img src={logo} alt="coding addict" className='logo' />
-            <button className="close-btn">
+            <button className="close-btn" onClick={closeSidebar}>
                 <FaTimes />
             </button>
         </div>
